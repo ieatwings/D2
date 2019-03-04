@@ -3,13 +3,13 @@ require_relative 'arg_check'
 
 # Class to test ArgumentCheck class
 class ArgCheckTest < Minitest::Test
-	# UNIT TESTS FOR METHOD arg_check(args)
-	# Equivalence classes:
-	# args = [x, 1..INFINITY, 1..INFINITY] -> returns true
-	# args = [x, -INFINITY..-1, -INFINITY..-1] -> returns false
-	# args = [x, NON-INTEGER, NON-INTERGER] -> returns false
-	# args = [x, 0, 0] -> returns false
 
+  # UNIT TESTS FOR METHOD arg_check(args)
+  # Equivalence classes:
+  # args = [x, 1..INFINITY, 1..INFINITY] -> returns true
+  # args = [x, -INFINITY..-1, -INFINITY..-1] -> returns false
+  # args = [x, NON-INTEGER, NON-INTERGER] -> returns false
+  # args = [x, 0, 0] -> returns false
 
   # Test: zero command line arguments
   def test_arg_check_noArgs

@@ -3,6 +3,6 @@
 require 'simplecov'
 SimpleCov.start
 
-require_relative 'arg_check_test.rb'
+require_relative 'arg_check_test'
 require_relative 'rubyist_test'
 require_relative 'simulation_test'
